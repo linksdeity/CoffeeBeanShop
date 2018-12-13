@@ -1,0 +1,14 @@
+﻿@model NewBeanShop.Models.Item
+@{
+    ViewBag.Title = "Edit Bean";
+}
+<h2>Edit Dish</h2>
+<form action="~/DataBase/ConfirmEdit" method="post">
+    <input type="hidden" name="ItemID" value="@Model.ItemID" />
+    <label> Name: <input type="text" name="Name" value="@Model.Name" required /> </label> <br />
+    <label> Description: <input type="text" name="Description" value="@Model.Description" required /> </label> <br />
+    <label> Qauntity:<input type="number" name="Qauntity" value="@Model.Qauntity" required pattern="[A-Z][a-z ]+[A-Z][a-z]+" /> </label> <br />
+    <label> Price:<input type="number" name="Price" value="@Model.Price" required pattern="[0-9]{10}" /> </label> <br />
+    <input type="submit" class="btn-default" /> <br />
+
+</form>

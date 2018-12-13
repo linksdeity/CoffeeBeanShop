@@ -113,7 +113,9 @@ namespace NewBeanShop.Controllers
             ModelState.AddModelError("", "Invalid login");
 
 
-            return View(loginModel);
+            //return View(loginModel);
+            return View();
+
         }
 
 

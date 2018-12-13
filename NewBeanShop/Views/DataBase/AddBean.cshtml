@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "NEW BEAN";
+}
+<h2>a new bean...</h2>
+
+
+
+<form action="~/DataBase/AddBean" method="post">
+    <label> Name: <input type="text" name="Name" required /> </label> <br />
+    <label> Description: <input type="text" name="Description" required /> </label> <br />
+    <label> Qauntity:<input type="number" name="Qauntity" required /></label> <br />
+    <label> Price:<input type="number" name="Price" required /></label> <br />
+    <input type="submit" class="btn-default" /> <br />
+
+</form>

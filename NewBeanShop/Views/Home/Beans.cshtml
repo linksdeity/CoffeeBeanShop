@@ -9,16 +9,29 @@
 {
     <ul>
         <li>
-           NAME:  @bean.Name
+            NAME:  @bean.Name
         </li>
         <li>
-           DESCRIPTION:  @bean.Description
+            DESCRIPTION:  @bean.Description
         </li>
         <li>
-           QUANTITY:  @bean.Qauntity
+            QUANTITY:  @bean.Qauntity
         </li>
         <li>
             PRICE: @bean.Price
         </li>
+        <li>
+            <a onclick="DeleteChoice(@bean.ItemID)" style="cursor:pointer">DELETE!</a>
+        </li>
+        <li>
+            <a href="~/DataBase/EditBean?ID=@bean.ItemID">EDIT!</a>
+        </li>
+        <li>
+            ------------------------------------------------------------
+        </li>
     </ul>
 }
+<br />
+<a href="~/DataBase/AddBean/">ADD A BEAN?</a>
+
+<script src="~/Scripts/JavaScript.js"></script>
