@@ -118,6 +118,8 @@ namespace NewBeanShop.Controllers
 
 
 
+        //this is our method for getting the user from the User table
+        //this view can only be reached by typing in the url as it is just for testing
 
         [Authorize]
         public ActionResult Summary()
