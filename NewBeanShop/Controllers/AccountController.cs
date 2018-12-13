@@ -44,7 +44,7 @@ namespace NewBeanShop.Controllers
 
                     CoffeeShopDBEntities ORM = new CoffeeShopDBEntities();
 
-                    //create the user based on our user model and assign the properties from the identity user to it...
+                    //create the user based on our user model and assign the properties from the register user to it...
                     var newUser = new User();
 
                     newUser.FirstName = registerUser.FirstName;
