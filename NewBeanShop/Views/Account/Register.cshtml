@@ -1,0 +1,30 @@
+﻿@model NewBeanShop.Models.RegisterModel
+
+
+<h2>Register</h2>
+
+
+@using (Html.BeginForm("Register", "Account", FormMethod.Post))
+{
+    @Html.ValidationSummary()
+    @Html.LabelFor(x => x.UserName) @Html.TextBoxFor(x => x.UserName)
+    <br />
+    @Html.LabelFor(x => x.Password) @Html.PasswordFor(x => x.Password)
+    <br />
+    @Html.LabelFor(x => x.ConfirmPassword) @Html.PasswordFor(x => x.ConfirmPassword)
+    <br />
+
+
+
+  <!--Below is just for user table, only above is used for identity framework-->
+
+    @Html.LabelFor(x => x.FirstName) @Html.TextBoxFor(x => x.FirstName)
+    <br />
+    @Html.LabelFor(x => x.LastName) @Html.TextBoxFor(x => x.LastName)
+    <br />
+    @Html.LabelFor(x => x.Address) @Html.TextBoxFor(x => x.Address)
+    <br />
+
+
+    <input class="btn" type="submit" value="Register" />
+}

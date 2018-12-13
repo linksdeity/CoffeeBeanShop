@@ -1,0 +1,24 @@
+﻿@model NewBeanShop.Models.Item
+@{
+    ViewBag.Title = "Beans";
+}
+
+<h2>Beans</h2>
+
+@foreach (var bean in ViewBag.BeanList)
+{
+    <ul>
+        <li>
+           NAME:  @bean.Name
+        </li>
+        <li>
+           DESCRIPTION:  @bean.Description
+        </li>
+        <li>
+           QUANTITY:  @bean.Qauntity
+        </li>
+        <li>
+            PRICE: @bean.Price
+        </li>
+    </ul>
+}

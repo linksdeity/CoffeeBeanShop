@@ -1,0 +1,17 @@
+﻿@model NewBeanShop.Models.RegisterModel
+
+
+<h2>Login</h2>
+
+
+@using (Html.BeginForm("Login", "Account", FormMethod.Post))
+{
+    @Html.ValidationSummary()
+    @Html.LabelFor(x => x.UserName) @Html.TextBoxFor(x => x.UserName)
+    <br />
+    @Html.LabelFor(x => x.Password) @Html.PasswordFor(x => x.Password)
+
+
+
+    <input class="btn" type="submit" value="Login" />
+}
